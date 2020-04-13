@@ -1,0 +1,8 @@
+${WORK_DIR}/src/aes.v 
+${WORK_DIR}/src/finalround.v
+${WORK_DIR}/src/g.v
+${WORK_DIR}/src/key_expand.v
+${WORK_DIR}/src/multiply.v
+${WORK_DIR}/src/oneround.v
+${WORK_DIR}/src/s_box.v        
+${WORK_DIR}/sim/aes_tb.v

@@ -1,0 +1,25 @@
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#  Library Setup
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+set techlib_path /export/homeO1/techlib/smic180_cas_2015
+set std_cell_path ${techlib_path}/SC/aci/sc-x
+
+set target_library  {typical.db}
+set link_library    {* typical.db}
+
+set search_path [list . ${synopsys_root}/libraries/syn]
+lappend search_path ${std_cell_path}/synopsys
+lappend search_path ${std_cell_path}/symbols/synopsys
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#  Debug 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+echo "\n\nSettings:"
+echo "search_path:       $search_path"
+echo "link_library:      $link_library"
+echo "target_library:    $target_library"
+echo "\n\nI am ready...\n"
+

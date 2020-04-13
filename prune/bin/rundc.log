@@ -1,0 +1,31 @@
+
+                      Design Compiler Graphical
+                            DC Ultra (TM)
+                             DFTMAX (TM)
+                         Power Compiler (TM)
+                           DesignWare (R)
+                           DC Expert (TM)
+                         Design Vision (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                            DFT Compiler
+                        Library Compiler (TM)
+                         Design Compiler(R)
+
+          Version G-2012.06-SP2 for RHEL32 -- Aug 31, 2012
+               Copyright (c) 1988-2012 Synopsys, Inc.
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+Initializing...
+Error: could not open script file "/export/homeO3/iccad/digital/aes/prune/bin/rundc.tcl" (CMD-015)
+dc_shell> exit
+
+Memory usage for main task 178 Mbytes.
+Memory usage for this session 178 Mbytes.
+CPU usage for this session 1 seconds ( 0.00 hours ).
+
+Thank you...

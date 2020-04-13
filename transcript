@@ -1,0 +1,49 @@
+# //  ModelSim SE 10.2c Jul 18 2013 Linux 2.6.18-398.el5
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Project file /export/homeO3/iccad/Desktop/pre/paa_present/sim/present.mpf was not found.
+# Unable to open project.
+# Loading project aes
+# Compile of aes_tb.v was successful.
+# Compile of aes.v was successful.
+# Compile of finalround.v was successful.
+# Compile of g.v was successful.
+# Compile of key_expand.v was successful.
+# Compile of multiply.v was successful.
+# Compile of oneround.v was successful.
+# Compile of s_box.v was successful.
+# 8 compiles, 0 failed with no errors. 
+vsim work.aes_tb
+# vsim work.aes_tb 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.aes_tb(fast)
+# Loading work.s_box(fast)
+add wave -position insertpoint sim:/aes_tb/dut/*
+# (vish-4014) No objects found matching '/aes_tb/dut/*'.
+add wave -position insertpoint sim:/aes_tb/dut/key_expand/g/*
+# (vish-4014) No objects found matching '/aes_tb/dut/key_expand/g/*'.
+run -all
+# 
+# **************************************
+# * AES Test started ...               *
+# **************************************
+# 
+# plaintext = 3243f6a8885a308d313198a2e0370734
+# ciphertext = 3925841d02dc09fbdc118597196a0b32
+# plaintext = 00000000000000000000000000000001
+# ciphertext = 5817fcce7a7e3061367f1d01a4e7995a
+# 
+# **************************************
+# * AES Test done ...                  *
+# **************************************
+# 
+# ** Note: $finish    : /export/homeO3/iccad/digital/aes/sim/aes_tb.v(101)
+#    Time: 405 ns  Iteration: 0  Instance: /aes_tb
+# 1
+# Break at /export/homeO3/iccad/digital/aes/sim/aes_tb.v line 101
