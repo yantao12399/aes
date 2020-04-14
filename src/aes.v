@@ -59,7 +59,7 @@ key_expand key_expand(
     .w(w)
 );
 
-assign data_to_oneround = (roundSel==0)? (data_in^keyIn) : (roundSel<=4'd9)? data_from_oneround : data_to_oneround;
+assign data_to_oneround = (roundSel==0)? (data_in^keyIn) : (roundSel<=4'd9)? data_from_oneround_r : data_to_oneround;
 
 oneround oneround(
     .clk(clk),
@@ -70,6 +70,11 @@ oneround oneround(
     .keyIn(w),
     .data_out(data_from_oneround)
 );
+
+reg [127:0] data_from_oneround_r;
+always@(posedge clk)begin
+    data_from_oneround_r <= data_from_oneround;
+end
 
 assign data_to_finalround = (roundSel==4'd9)? data_from_oneround : 128'd0;
 
